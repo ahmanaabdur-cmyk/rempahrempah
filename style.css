@@ -1,69 +1,144 @@
+/* ===== RESET & FONT ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
 body {
-    margin: 0;
-    font-family: 'Segoe UI', sans-serif;
-    line-height: 1.6;
-    color: #333;
+  background-color: #f7f2ec;
+  color: #3b2a1a;
+  line-height: 1.6;
 }
 
+/* ===== HERO ===== */
 .hero {
-    background: #2f6b3f;
-    color: white;
-    padding: 80px 20px;
-    text-align: center;
+  position: relative;
+  min-height: 100vh;
+  background: linear-gradient(
+    rgba(90, 52, 32, 0.85),
+    rgba(90, 52, 32, 0.85)
+  ),
+  url("img/rempah-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  padding: 60px 20px;
+  text-align: center;
 }
 
+.logo {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 90px;
+}
+
+/* ===== TEXT HERO ===== */
 .hero h1 {
-    font-size: 48px;
-    margin-bottom: 10px;
+  font-size: 3rem;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
 }
 
 .subtitle {
-    font-size: 18px;
-    margin-bottom: 30px;
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  opacity: 0.9;
 }
 
+/* ===== BUTTON ===== */
 .cta a {
-    text-decoration: none;
-    color: white;
-    background: #4caf50;
-    padding: 12px 20px;
-    margin: 5px;
-    border-radius: 5px;
-    display: inline-block;
+  display: inline-block;
+  padding: 12px 28px;
+  margin: 5px;
+  text-decoration: none;
+  border-radius: 30px;
+  background-color: #c89b6d;
+  color: #3b2a1a;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.cta a:hover {
+  background-color: #e0b78a;
 }
 
 .cta .secondary {
-    background: transparent;
-    border: 2px solid white;
+  background-color: transparent;
+  border: 2px solid #c89b6d;
+  color: #fff;
 }
 
+.cta .secondary:hover {
+  background-color: #c89b6d;
+  color: #3b2a1a;
+}
+
+/* ===== SECTION ===== */
 section {
-    padding: 60px 20px;
-    max-width: 1000px;
-    margin: auto;
+  padding: 70px 10%;
 }
 
-h2 {
-    color: #2f6b3f;
-    margin-bottom: 20px;
+section h2 {
+  font-size: 2rem;
+  margin-bottom: 25px;
+  color: #5a3420;
+  text-align: center;
 }
 
+/* ===== PRODUK ===== */
 .produk-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
 }
 
 .produk {
-    border: 1px solid #ddd;
-    padding: 20px;
-    border-radius: 8px;
-    background: #f9f9f9;
+  background: #fff;
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  transition: 0.3s;
 }
 
-footer {
-    background: #2f6b3f;
-    color: white;
-    text-align: center;
-    padding: 20px;
+.produk:hover {
+  transform: translateY(-8px);
 }
+
+.produk h3 {
+  color: #7a4a2e;
+  margin-bottom: 10px;
+}
+
+/* ===== LIST ===== */
+ul {
+  max-width: 700px;
+  margin: auto;
+}
+
+ul li {
+  margin-bottom: 10px;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  background-color: #3b2a1a;
+  color: #eee;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .logo {
+    width: 70px;
+  }
+}
+
